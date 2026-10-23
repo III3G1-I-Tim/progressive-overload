@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+
+  <div class="auth-card">
+    <h1 class="card-title">Sign Up</h1>
+    
+    <form>
+      
+     
+      <div class="input-row">
+        <div class="input-group">
+          <input type="text" class="form-input" placeholder="First Name" required>
+        </div>
+        <div class="input-group">
+          <input type="text" class="form-input" placeholder="Last Name" required>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="input-group">
+        <input type="email" class="form-input" placeholder="Email" required>
+        <span class="input-icon">
+          <!-- Email Icon -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+          </svg>
+        </span>
+      </div>
+
+      <!-- Password -->
+      <div class="input-group">
+        <input type="password" class="form-input" placeholder="Password" required>
+        <span class="input-icon">
+          <!-- Password Icon -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+        </span>
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="input-group">
+        <input type="password" class="form-input" placeholder="Confirm Password" required>
+        <span class="input-icon">
+          <!-- Password Icon -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+        </span>
+      </div>
+
+      <!-- Date of birth -->
+      <div class="input-group">
+        <input type="text" class="form-input dob-input" placeholder="Date of birth" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" required>
+        <span class="dob-placeholder">DD/MM/YYYY</span>
+      </div>
+
+      <!-- Height & Weight -->
+      <div class="input-row">
+        <div class="input-group select-group">
+          <select class="form-input form-select" required>
+            <option value="" disabled selected hidden>Height</option>
+            <option value="150">150 cm</option>
+            <option value="160">160 cm</option>
+            <option value="170">170 cm</option>
+            <option value="180">180 cm</option>
+            <option value="190">190 cm</option>
+          </select>
+          <span class="select-arrow">▼</span>
+        </div>
+        <div class="input-group select-group">
+          <select class="form-input form-select" required>
+            <option value="" disabled selected hidden>Weight</option>
+            <option value="50">50 kg</option>
+            <option value="60">60 kg</option>
+            <option value="70">70 kg</option>
+            <option value="80">80 kg</option>
+            <option value="90">90 kg</option>
+          </select>
+          <span class="select-arrow">▼</span>
+        </div>
+      </div>
+
+      <!-- Level of Exercise Section -->
+      <div class="exercise-section">
+        <div class="exercise-container">
+          <span class="exercise-text text-left">Little to no<br>exercise</span>
+          
+          <div class="radio-options">
+            <label class="radio-circle">
+              <input type="radio" name="exercise_level" value="1" required>
+              <span class="circle-custom"></span>
+            </label>
+            <label class="radio-circle">
+              <input type="radio" name="exercise_level" value="2">
+              <span class="circle-custom"></span>
+            </label>
+            <label class="radio-circle">
+              <input type="radio" name="exercise_level" value="3">
+              <span class="circle-custom"></span>
+            </label>
+            <label class="radio-circle">
+              <input type="radio" name="exercise_level" value="4">
+              <span class="circle-custom"></span>
+            </label>
+            <label class="radio-circle">
+              <input type="radio" name="exercise_level" value="5">
+              <span class="circle-custom"></span>
+            </label>
+          </div>
+
+          <span class="exercise-text text-right">Intense physical<br>job or 6-7<br>days a week</span>
+        </div>
+        <div class="exercise-title">Level of Exercise</div>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-btn">SIGN UP</button>
+    </form>
+  </div>
+
+</body>
+</html>
